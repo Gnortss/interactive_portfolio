@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"noImplicitAny": true,
+		"outDir": "./dist",
+		"allowJs": true,
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"paths": {
+			"*": [
+				"src/*"
+			]
+		}
+	},
+	"include": [
+		"src/**/*"
+	]
+}
