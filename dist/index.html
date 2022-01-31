@@ -7,13 +7,37 @@
 	<title>Boilerplate</title>
 	<style>
 		body {
-			overflow: hidden;
+			height: 400vh;
 			margin: 0px;
+			overflow-y: scroll;
+			scrollbar-width: none;
+			/* Firefox */
+			-ms-overflow-style: none;
+			/* Internet Explorer 10+ */
+		}
+
+		::-webkit-scrollbar {
+			display: none;
+			/* Safari and Chrome */
+		}
+
+		section {
+			overflow-y: scroll;
+			height: 100%;
+			width: 100%;
+			box-sizing: content-box;
+		}
+
+		#webgl {
+			position: fixed;
+			top: 0;
+			left: 0;
 		}
 	</style>
 </head>
 
 <body>
+	<canvas id="webgl"></canvas>
 	<script type="module" src="bundle.js"></script>
 </body>
 
